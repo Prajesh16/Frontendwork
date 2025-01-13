@@ -1,0 +1,35 @@
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+.grid > * {
+  background-color: #0a80f5;
+  border: 2px solid #3c2ed4;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 0.5em;
+}
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "aa aa"
+    "bb cc"
+    ". dd";
+}
+
+.one {
+  grid-area: aa;
+}
+
+.two {
+  grid-area: bb;
+}
+
+.three {
+  grid-area: cc;
+}
+
+.four {
+  grid-area: dd;
+}
